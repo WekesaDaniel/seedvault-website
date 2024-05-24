@@ -1,0 +1,154 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seed Vault - Smart Seed and Germplasm Storage System">
+    <title>Seed Vault</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Seed Vault</div>
+        <div>
+            <button onclick="location.href='signup.html'" class="signup-btn">Sign up</button>
+            <button onclick="location.href='signin.html'" class="signin-btn">Sign In</button>
+        </div>
+    </header>
+    
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Social Media Section -->
+    <aside id="social-media">
+        <p>Follow us</p>
+        <a href="#"><img src="{% static 'myapp/images/facebook.png' %}" alt="Facebook"></a>
+        <a href="#"><img src="{% static 'myapp/images/twitter.png' %}" alt="Twitter"></a>
+        <a href="#"><img src="{% static 'myapp/images/linkedin.png' %}" alt="LinkedIn"></a>
+    </aside>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="description">
+            <h1>Welcome to Seed Vault</h1>
+            <p>Seed Vault is your ultimate solution for smart seed and germplasm storage. Our cutting-edge technology ensures the preservation and accessibility of genetic resources for future generations. Join us in our mission to revolutionize seed storage with innovative, sustainable solutions.</p>
+        </div>
+        <div class="slider">
+            <div class="slide" style="background-image: url('{% static 'myapp/images/slide1.jpg' %}');">
+                <div class="cta">
+                    <h2>Welcome to Seed Vault</h2>
+                    <button onclick="location.href='signin.html'" class="btn">Get Started</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('{% static 'myapp/images/slide2.jpg' %}');">
+                <div class="cta">
+                    <h2>Preserve Your Seeds Efficiently</h2>
+                    <button onclick="location.href='features.html'" class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main>
+        <section id="about-us">
+            <div class="content">
+                <img src="{% static 'myapp/images/about1.jpg' %}" alt="About Us">
+                <div class="text">
+                    <h2>About Seed Vault</h2>
+                    <p>Our mission is to revolutionize seed storage through innovative technology. We are committed to providing sustainable solutions that ensure the preservation and accessibility of genetic resources for future generations.</p>
+                    <button onclick="location.href='about.html'" class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="content reverse">
+                <div class="text">
+                    <h2>Our Solution</h2>
+                    <p>We provide a smart, efficient, and secure way to store and manage your seeds. Our cutting-edge technology enables precise control over environmental conditions, ensuring the longevity and viability of stored seeds.</p>
+                    <button onclick="location.href='solution.html'" class="btn">Discover How</button>
+                </div>
+                <img src="{% static 'myapp/images/solution1.jpg' %}" alt="Our Solution">
+            </div>
+            <div class="content">
+                <img src="{% static 'myapp/images/vision.jpg' %}" alt="Our Vision">
+                <div class="text">
+                    <h2>Our Vision</h2>
+                    <p>We envision a world where the genetic diversity of crops is preserved and accessible to everyone. Our goal is to be the leading provider of seed storage solutions that support agricultural sustainability.</p>
+                    <button onclick="location.href='vision.html'" class="btn">Learn More</button>
+                </div>
+            </div>
+            <div class="content reverse">
+                <div class="text">
+                    <h2>Our Team</h2>
+                    <p>Our team comprises experts in agriculture, technology, and environmental science. We work collaboratively to develop innovative solutions that address the challenges of seed preservation.</p>
+                    <button onclick="location.href='team.html'" class="btn">Meet the Team</button>
+                </div>
+                <img src="{% static 'myapp/images/team.jpg' %}" alt="Our Team">
+            </div>
+        </section>
+        
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="{% static 'myapp/images/feature1.jpg' %}" alt="Advanced Temperature Control">
+                    <div class="feature-text">
+                        <h3>Advanced Temperature Control</h3>
+                        <p>Our system allows precise temperature control to mimic natural seed storage conditions, ensuring optimal preservation.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'myapp/images/feature2.jpg' %}" alt="Remote Monitoring">
+                    <div class="feature-text">
+                        <h3>Remote Monitoring</h3>
+                        <p>Monitor and manage your seed storage facility remotely, giving you peace of mind and flexibility.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'myapp/images/feature3.jpg' %}" alt="Data Analytics">
+                    <div class="feature-text">
+                        <h3>Data Analytics</h3>
+                        <p>Gain valuable insights into seed viability and storage conditions through comprehensive data analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="brands">
+            <!--<h2>Brands We Work With</h2>-->
+            <div class="brands-grid">
+                <img src="{% static 'myapp/brands/brand1.png' %}" alt="Brand 1">
+                <img src="{% static 'myapp/brands/brand2.png' %}" alt="Brand 2">
+                <img src="{% static 'myapp/brands/brand3.png' %}" alt="Brand 3">
+                <img src="{% static 'myapp/brands/brand4.png' %}" alt="Brand 4">
+                <img src="{% static 'myapp/brands/brand5.png' %}" alt="Brand 5">
+                <img src="{% static 'myapp/brands/brand6.png' %}" alt="Brand 6">
+                <img src="{% static 'myapp/brands/brand7.png' %}" alt="Brand 7">
+                <img src="{% static 'myapp/brands/brand8.png' %}" alt="Brand 8">
+            </div>
+            <img src="{% static 'myapp/images/constant-image.jpg' %}" class="fixed-image" alt="Constant Image">
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <!--<p>&copy; 2024 Seed Vault. All rights reserved.</p>-->
+        </div>
+    </footer>
+    
+    <script src="{% static 'myapp/js/scripts.js' %}"></script>
+</body>
+</html>

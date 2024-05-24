@@ -1,0 +1,11 @@
+# .gitpod.yml
+image: gitpod/workspace-full:latest
+
+tasks:
+  - init: docker-compose up --build
+
+ports:
+  - port: 8000
+    onOpen: open-preview
+  - port: 3000
+    onOpen: open-preview

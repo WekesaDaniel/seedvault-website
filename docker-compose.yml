@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    # Commented out the depends_on section
+    # depends_on:
+    #   - db
+    #environment:
+      # Commented out the environment variables related to MongoDB
+      # - DJANGO_DB_HOST=db
+      # - DJANGO_DB_PORT=27017
+
+# Removed the volumes section related to MongoDB
+# volumes:
+#   mongo_data:
